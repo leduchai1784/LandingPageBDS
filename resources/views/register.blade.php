@@ -1,0 +1,51 @@
+@extends('layouts.app')
+
+@section('title', 'Đăng ký tài khoản - LDH Homes')
+
+@section('content')
+<!-- START SECTION TOP -->
+	<section class="section-top">
+		<div class="container">
+			<div class="col-lg-10 offset-lg-1 col-xs-12 text-center">
+				<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"
+					data-wow-offset="0">
+					<h1>Đăng ký tài khoản</h1>
+				</div><!-- //.HERO-TEXT -->
+			</div><!--- END COL -->
+		</div><!--- END CONTAINER -->
+	</section>
+	<!-- END SECTION TOP -->
+
+	<!-- START REGISTER -->
+	<section class="login_register section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-sm-12 col-xs-12">
+					<div class="register">
+						<h4 class="login_register_title">Tạo tài khoản mới:</h4>
+						<div class="form-group">
+							<input type="text" id="contact-name" class=" form-control requiredField input-label"
+								placeholder="Tên đăng nhập" name="name">
+						</div>
+						<div class="form-group">
+							<input type="text" id="contact-name" class=" form-control requiredField input-label"
+								placeholder="Nhập họ và tên" name="name">
+						</div>
+						<div class="form-group">
+							<input type="email" id="contact-email" class="form-control requiredField input-label"
+								placeholder="Nhập địa chỉ Email của bạn" name="email">
+						</div>
+						<div class="form-group">
+							<input type="password" id="contact-email" class="form-control requiredField input-label"
+								placeholder="Nhập mật khẩu" name="password">
+						</div>
+						<div class="form-group col-md-12 mbnone">
+							<button class="btn btn-contact-bg" type="submit" name="submit">Đăng ký ngay</button>
+						</div>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+		</div><!--- END CONTAINER -->
+	</section>
+	<!-- END REGISTER -->
+@endsection

@@ -1,0 +1,40 @@
+/* CSS Design Tokens for Aura Elite Landing Page */
+
+:root {
+    /* Color Palette */
+    --bg-dark: #070708;
+    --bg-dark-secondary: #0f1013;
+    --text-light: #f3f4f6;
+    --text-muted: #9ca3af;
+    --text-dark: #111827;
+
+    /* Gold / Bronze Metallic Scales */
+    --primary-color: #d4af37;       /* Luxury Gold */
+    --primary-light: #f3e5ab;       /* Soft Light Gold */
+    --primary-dark: #aa7c11;        /* Antique Gold */
+    --accent-color: #8c6239;         /* Bronze/Copper */
+    
+    /* Layout colors */
+    --card-bg-glass: rgba(15, 16, 19, 0.6);
+    --card-border-glass: rgba(212, 175, 55, 0.15);
+    --glow-gold: rgba(212, 175, 55, 0.4);
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-sans: 'Outfit', sans-serif;
+    
+    /* Transition Curves */
+    --transition-premium: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Borders */
+    --border-radius-sm: 4px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 24px;
+    
+    /* Z-Indices */
+    --z-preloader: 9999;
+    --z-header: 1000;
+    --z-overlay: 100;
+    --z-content: 10;
+}

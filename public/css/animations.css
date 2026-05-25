@@ -1,0 +1,57 @@
+/* Core Keyframe Animations & Animation Helpers */
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1) translate(0px, 0px);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.15) translate(20px, -20px);
+    }
+}
+
+@keyframes scroll-mouse-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+    }
+}
+
+/* Helper Animation Utility Classes */
+.animate-shimmer {
+    animation: shimmer 2s infinite linear;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 8s infinite ease-in-out;
+}
+
+.animate-glow {
+    animation: glow-pulse 4s infinite ease-in-out;
+}
