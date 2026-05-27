@@ -1,0 +1,9 @@
+{
+  "name": "landing-page-bds",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static real estate landing page assets",
+  "scripts": {
+    "build": "echo 'Vite build is not required: static assets are loaded directly from public/assets.'"
+  }
+}
