@@ -153,3 +153,25 @@ Nếu bạn muốn tùy chỉnh sâu về phong cách thiết kế, hãy chú ý
 
 > [!NOTE]
 > Mọi thắc mắc hoặc cần tùy biến sâu hơn về hiệu ứng chuyển động 3D, hãy liên hệ nhà phát triển để được trợ giúp! Chúc bạn tạo nên một Landing Page Bất động sản đỉnh cao!
+
+---
+
+## ☁️ Hướng Dẫn Deploy Lên Vercel
+
+Dự án đã được tích hợp sẵn tệp cấu hình **[vercel.json](file:///C:/ThucTap/LandingPageBDS/vercel.json)** để chạy ứng dụng Laravel mượt mà trên serverless PHP của Vercel.
+
+### 1. Cấu hình tại màn hình cài đặt của Vercel (Framework Settings)
+Dựa theo giao diện bạn thấy khi tạo dự án trên Vercel:
+* **Framework Preset:** Chọn **Other**.
+* **Build Command:** Gạt công tắc **Override sang Tắt (OFF - Màu xám)**. *Lý do: Dự án chạy trực tiếp tài nguyên tĩnh từ CDN, không cần chạy npm build.*
+* **Output Directory:** Gạt công tắc **Override sang Tắt (OFF - Màu xám)**.
+* **Install Command:** Gạt công tắc **Override sang Tắt (OFF - Màu xám)**.
+* **Development Command:** Gạt công tắc **Override sang Tắt (OFF - Màu xám)**.
+
+### 2. Cấu hình Environment Variables (Biến môi trường) trên Vercel
+Hãy chuyển qua tab **Environment Variables** trên Vercel và điền các khóa sau để Laravel hoạt động an toàn và ổn định:
+* `APP_KEY`: *[Lấy chuỗi khóa từ file `.env` cục bộ của bạn]*
+* `APP_ENV`: `production`
+* `APP_DEBUG`: `false`
+* `SESSION_DRIVER`: `cookie` *(Bắt buộc đối với serverless để tránh lỗi ghi file session)*
+
